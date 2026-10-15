@@ -8,6 +8,31 @@ The project uses male speech, female speech, and instrumental music to create sy
 
 A Principal Component Analysis (PCA) baseline is also implemented to compare source-recovery performance.
 
+## Audio Sources
+
+This project uses three audio recordings:
+
+- Male speech
+- Female speech
+- Instrumental music
+
+The recordings are provided in the `data/` directory for reproducing
+the source-separation experiment.
+
+The audio files are used to generate synthetic mixtures through a
+custom linear mixing matrix.
+
+## Separated Audio Outputs
+
+The recovered audio components are available in the `separated_audio/`
+directory as WAV files.
+
+- `component_1.wav`
+- `component_2.wav`
+- `component_3.wav`
+
+
+
 ## Problem Statement
 
 When multiple audio sources are recorded together, recovering the individual signals from the observed mixtures is known as blind source separation.
@@ -81,6 +106,7 @@ FastICA achieved higher correlation with the original signals than PCA in this e
 
 These results come from a controlled experiment using known original signals and a predefined mixing matrix. They do not guarantee the same performance on arbitrary real-world recordings.
 
+
 ## Evaluation
 
 Absolute Pearson correlation is used to measure the similarity between each recovered component and its corresponding original source.
@@ -105,6 +131,16 @@ Correlation measures signal similarity but does not fully capture perceptual aud
 - Compare additional source-separation evaluation metrics.
 - Develop an interface for uploading audio and listening to separated sources.
 - Investigate more advanced source-separation techniques.
+
+  ## Visualizations
+
+### PCA vs FastICA
+
+![PCA vs FastICA](outputs/pca_vs_fastica.png)
+
+### Recovered Components
+
+![Recovered Components](outputs/recovered_components.png)
 
 ## How to Run
 
