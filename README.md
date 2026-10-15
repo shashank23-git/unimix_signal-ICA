@@ -150,7 +150,7 @@ Correlation measures signal similarity but does not fully capture perceptual aud
 4. Provide the required audio files.
 5. Run the notebook cells in order.
 
-The original audio files are not included in the repository. Provide suitable audio files locally before running the experiment.
+
 
 ## Conclusion
 
